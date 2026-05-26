@@ -198,3 +198,58 @@ nav a:hover{
   }
 
 }
+.ring{
+  position:absolute;
+  width:480px;
+  height:480px;
+  border:1px solid rgba(126,167,255,0.25);
+  border-radius:50%;
+  animation:spin 12s linear infinite;
+}
+
+.layer{
+  position:absolute;
+  opacity:0.35;
+}
+
+.layer1{
+  filter:blur(4px);
+}
+
+.layer2{
+  filter:blur(10px);
+}
+
+.particle{
+  position:absolute;
+  width:14px;
+  height:14px;
+  background:#7ea7ff;
+  border-radius:50%;
+  box-shadow:0 0 20px #7ea7ff;
+}
+
+.particle1{
+  top:20%;
+  left:10%;
+}
+
+.particle2{
+  top:70%;
+  right:15%;
+}
+
+.particle3{
+  bottom:10%;
+  left:50%;
+}
+
+@keyframes spin{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
