@@ -124,9 +124,70 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".watch",{
-  scale:1.25,
-  rotate:12,
+gsap.to(".watch-main",{
+  scale:1.2,
+  rotate:10,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"top top",
+    end:"bottom top",
+    scrub:true
+  }
+});
+
+gsap.to(".layer1",{
+  x:-180,
+  y:-60,
+  rotate:-25,
+  opacity:0,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"center center",
+    end:"bottom top",
+    scrub:true
+  }
+});
+
+gsap.to(".layer2",{
+  x:220,
+  y:80,
+  rotate:30,
+  opacity:0,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"center center",
+    end:"bottom top",
+    scrub:true
+  }
+});
+
+gsap.to(".particle1",{
+  x:-200,
+  y:-120,
+  opacity:0,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"top top",
+    end:"bottom top",
+    scrub:true
+  }
+});
+
+gsap.to(".particle2",{
+  x:180,
+  y:140,
+  opacity:0,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"top top",
+    end:"bottom top",
+    scrub:true
+  }
+});
+
+gsap.to(".particle3",{
+  y:220,
+  opacity:0,
   scrollTrigger:{
     trigger:".hero",
     start:"top top",
